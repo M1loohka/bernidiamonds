@@ -281,6 +281,13 @@ body {
 
 .puppy-photo { border-radius: 1rem; overflow: hidden; background: #0A0A0A; border: 1px solid rgba(244,223,166,0.16); }
 
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .puppy-meta { font-size: 0.85rem; color: rgba(244,223,166,0.72); display: flex; flex-direction: column; gap: 0.5rem; }
 .puppy-name { font-weight: 800; font-size: 1rem; color: var(--text-main); }
 .puppy-row { display: flex; flex-wrap: wrap; gap: 0.6rem; }
