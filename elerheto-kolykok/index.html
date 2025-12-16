@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Moonlight Kennel – Elérhető kölykök</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxus fekete–arany kennel weboldal tele képhellyel.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page">
+
+    <header class="navbar">
+      <div class="wrapper nav-inner">
+        <a href="../index.html" class="brand">
+          <div class="brand-logo"></div>
+          <div class="brand-text">
+            <span class="brand-title">Moonlight Kennel</span>
+            <span class="brand-subtitle">Luxus fekete · arany</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menü váltása">
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="../kan-kutyaink/">Kan kutyáink</a></li>
+          <li><a href="../szuka-kutyaink/">Szuka kutyáink</a></li>
+          <li><a href="../sajat-tenyesztesu-kutyaink/">Saját tenyésztésű kutyáink</a></li>
+          <li><a href="../elerheto-kolykok/">Elérhető kölykök</a></li>
+          <li><a href="../elerhetoseg/" class="nav-cta">Elérhetőség</a></li>
+          <li><a href="../rolunk/">Rólunk</a></li>
+        </ul>
+      </div>
+    </header>
+
+      
+    <main class="section">
+      <div class="wrapper">
+        <header class="section-header">
+          <div>
+            <div class="section-kicker">Elérhető kölykök</div>
+            <h1 class="section-title">Aktuális almok – kölykök</h1>
+          </div>
+          <p class="section-description">Itt jelenhetnek meg az aktuálisan elérhető kölykök, alomra bontva.</p>
+        </header>
+
+        <div class="puppies-grid">
+          <article class="puppy-card">
+            <div class="puppy-photo"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="puppy-meta">
+              <div class="puppy-name">Alfa alom – Kölyök #1</div>
+              <div class="puppy-row">
+                <span class="puppy-label">Nem: kan / szuka</span>
+                <span class="puppy-label">Szín: ...</span>
+                <span class="puppy-label">Státusz: elérhető</span>
+              </div>
+              <p>Ide jöhet a részletes leírás: jellem, környezet, oltások, chip, szerződés, stb.</p>
+            </div>
+          </article>
+
+          <article class="puppy-card">
+            <div class="puppy-photo"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="puppy-meta">
+              <div class="puppy-name">Alfa alom – Kölyök #2</div>
+              <div class="puppy-row">
+                <span class="puppy-label">Nem: kan / szuka</span>
+                <span class="puppy-label">Szín: ...</span>
+                <span class="puppy-label">Státusz: foglalható</span>
+              </div>
+              <p>Extra infók: szülők, előjegyzés, gazdi elvárások, találkozó, stb.</p>
+            </div>
+          </article>
+
+          <article class="puppy-card">
+            <div class="puppy-photo"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="puppy-meta">
+              <div class="puppy-name">Következő alom – előjegyzés</div>
+              <div class="puppy-row">
+                <span class="puppy-label">Tervezett dátum: ...</span>
+                <span class="puppy-label">Szülők: Kan · Szuka</span>
+              </div>
+              <p>Rövid leírás a következő alomról és a jelentkezés menetéről.</p>
+            </div>
+          </article>
+
+          <article class="puppy-card">
+            <div class="puppy-photo"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="puppy-meta">
+              <div class="puppy-name">Eladott kölykök – referencia</div>
+              <div class="puppy-row">
+                <span class="puppy-label">Már új otthonban</span>
+                <span class="puppy-label">Referenciaképek</span>
+              </div>
+              <p>Ide mehetnek régebbi kölykök fotói és rövid sztorik.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="wrapper footer-inner">
+        <span>© Moonlight Kennel – minden jog fenntartva.</span>
+        <span>Fekete–arany luxus dizájn, tele képhellyel.</span>
+      </div>
+    </footer>
+
+    </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        navLinks.classList.toggle('show');
+      });
+    }
+  </script>
+
+  </body>
+</html>

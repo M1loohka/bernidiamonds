@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Moonlight Kennel – Saját tenyésztésű kutyáink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxus fekete–arany kennel weboldal tele képhellyel.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page">
+
+    <header class="navbar">
+      <div class="wrapper nav-inner">
+        <a href="../index.html" class="brand">
+          <div class="brand-logo"></div>
+          <div class="brand-text">
+            <span class="brand-title">Moonlight Kennel</span>
+            <span class="brand-subtitle">Luxus fekete · arany</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menü váltása">
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="../kan-kutyaink/">Kan kutyáink</a></li>
+          <li><a href="../szuka-kutyaink/">Szuka kutyáink</a></li>
+          <li><a href="../sajat-tenyesztesu-kutyaink/">Saját tenyésztésű kutyáink</a></li>
+          <li><a href="../elerheto-kolykok/">Elérhető kölykök</a></li>
+          <li><a href="../elerhetoseg/" class="nav-cta">Elérhetőség</a></li>
+          <li><a href="../rolunk/">Rólunk</a></li>
+        </ul>
+      </div>
+    </header>
+
+      
+    <main class="section">
+      <div class="wrapper">
+        <header class="section-header">
+          <div>
+            <div class="section-kicker">Saját tenyésztés</div>
+            <h1 class="section-title">Saját tenyésztésű büszkeségek</h1>
+          </div>
+          <p class="section-description">Ide kerülhetnek azok a kutyák, akik már a kennel neve alatt születtek.</p>
+        </header>
+
+        <div class="dog-grid">
+          <article class="dog-card">
+            <span class="dog-tag">Moonlight</span>
+            <div class="dog-card-main"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="dog-meta"><div><div class="dog-name">Moonlight [Név #1]</div><div class="dog-info">Alomjelölés · születési dátum</div></div></div>
+            <div class="dog-badges"><span class="badge">Itthon maradt</span><span class="badge badge-soft">Szülők: Kan · Szuka</span></div>
+          </article>
+
+          <article class="dog-card">
+            <span class="dog-tag">Moonlight</span>
+            <div class="dog-card-main"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="dog-meta"><div><div class="dog-name">Moonlight [Név #2]</div><div class="dog-info">Alomjelölés · születési dátum</div></div></div>
+            <div class="dog-badges"><span class="badge">Új otthonban</span><span class="badge badge-soft">Family pet / sport</span></div>
+          </article>
+
+          <article class="dog-card">
+            <span class="dog-tag">Moonlight</span>
+            <div class="dog-card-main"><div class="photo-frame"><div class="photo-frame-inner"></div></div></div>
+            <div class="dog-meta"><div><div class="dog-name">Moonlight [Név #3]</div><div class="dog-info">Alomjelölés · születési dátum</div></div></div>
+            <div class="dog-badges"><span class="badge">Champion potenciál</span><span class="badge badge-soft">Egészség szűrések</span></div>
+          </article>
+        </div>
+      </div>
+    </main>
+
+
+    <footer class="footer">
+      <div class="wrapper footer-inner">
+        <span>© Moonlight Kennel – minden jog fenntartva.</span>
+        <span>Fekete–arany luxus dizájn, tele képhellyel.</span>
+      </div>
+    </footer>
+
+    </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        navLinks.classList.toggle('show');
+      });
+    }
+  </script>
+
+  </body>
+</html>

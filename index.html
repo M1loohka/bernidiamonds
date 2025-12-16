@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Moonlight Kennel – Kezdőlap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luxus fekete–arany kennel weboldal tele képhellyel.">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="page">
+
+    <header class="navbar">
+      <div class="wrapper nav-inner">
+        <a href="index.html" class="brand">
+          <div class="brand-logo"></div>
+          <div class="brand-text">
+            <span class="brand-title">Moonlight Kennel</span>
+            <span class="brand-subtitle">Luxus fekete · arany</span>
+          </div>
+        </a>
+
+        <button class="nav-toggle" aria-label="Menü váltása">
+          <span></span>
+        </button>
+
+        <ul class="nav-links">
+          <li><a href="kan-kutyaink/">Kan kutyáink</a></li>
+          <li><a href="szuka-kutyaink/">Szuka kutyáink</a></li>
+          <li><a href="sajat-tenyesztesu-kutyaink/">Saját tenyésztésű kutyáink</a></li>
+          <li><a href="elerheto-kolykok/">Elérhető kölykök</a></li>
+          <li><a href="elerhetoseg/" class="nav-cta">Elérhetőség</a></li>
+          <li><a href="rolunk/">Rólunk</a></li>
+        </ul>
+      </div>
+    </header>
+
+      
+    <main class="hero">
+      <div class="wrapper hero-grid">
+        <section>
+          <div class="hero-badge">
+            <span>🐾</span>
+            <span>Luxus kennel megjelenés – fekete & arany</span>
+          </div>
+          <h1 class="hero-title">
+            Moonlight Kennel – <span class="highlight">prémium vonal, igazi minőség</span>
+          </h1>
+          <p class="hero-subtitle">
+            A képek helye már ki van építve: csak rakd be a saját fotóidat és kész a brutál elegáns kennel weboldal.
+            Fekete–arany, letisztult, komoly.
+          </p>
+          <div class="hero-cta-row">
+            <a href="elerheto-kolykok/" class="btn-primary">Elérhető kölykök</a>
+            <div class="btn-soft">Töltsd fel a képeket és kész</div>
+          </div>
+        </section>
+
+        <aside class="hero-gallery">
+          <div class="hero-card-main">
+            <div class="hero-photo-grid">
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat-pill">⭐ Show / champion vonalak</div>
+              <div class="hero-stat-pill">🖤 Prémium, igényes tartás</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <section class="section">
+      <div class="wrapper">
+        <header class="section-header">
+          <div>
+            <div class="section-kicker">Kan · Szuka · Kölykök</div>
+            <h2 class="section-title">Kártyás elrendezés – tele képhellyel</h2>
+          </div>
+          <p class="section-description">
+            Ezek csak minták. Cseréld a “Kép helye” blokkokat saját fotókra, és bővítsd annyi kutyával, amennyivel akarod.
+          </p>
+        </header>
+
+        <div class="dog-grid">
+          <article class="dog-card">
+            <span class="dog-tag">Kan</span>
+            <div class="dog-card-main">
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+            </div>
+            <div class="dog-meta">
+              <div>
+                <div class="dog-name">Kan név</div>
+                <div class="dog-info">Szín · vérvonal · születési év</div>
+              </div>
+            </div>
+            <div class="dog-badges">
+              <span class="badge">Show potenciál</span>
+              <span class="badge badge-soft">HD/ED szűrések</span>
+            </div>
+          </article>
+
+          <article class="dog-card">
+            <span class="dog-tag">Szuka</span>
+            <div class="dog-card-main">
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+            </div>
+            <div class="dog-meta">
+              <div>
+                <div class="dog-name">Szuka név</div>
+                <div class="dog-info">Szín · vérvonal · születési év</div>
+              </div>
+            </div>
+            <div class="dog-badges">
+              <span class="badge">Anyai vonal</span>
+              <span class="badge badge-soft">Tesztelt egészség</span>
+            </div>
+          </article>
+
+          <article class="dog-card">
+            <span class="dog-tag">Kennel kölyök</span>
+            <div class="dog-card-main">
+              <div class="photo-frame"><div class="photo-frame-inner"></div></div>
+            </div>
+            <div class="dog-meta">
+              <div>
+                <div class="dog-name">Moonlight kölyök</div>
+                <div class="dog-info">Elérhető / foglalt · alom jelölés</div>
+              </div>
+            </div>
+            <div class="dog-badges">
+              <span class="badge">Családbarát</span>
+              <span class="badge badge-soft">Szerződéssel</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="wrapper footer-inner">
+        <span>© Moonlight Kennel – minden jog fenntartva.</span>
+        <span>Fekete–arany luxus dizájn, tele képhellyel.</span>
+      </div>
+    </footer>
+
+    </div>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    if (toggle && navLinks) {
+      toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active');
+        navLinks.classList.toggle('show');
+      });
+    }
+  </script>
+
+  </body>
+</html>
