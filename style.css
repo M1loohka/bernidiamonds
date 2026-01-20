@@ -194,14 +194,16 @@ body {
     #0A0A0A;
   position: relative; overflow: hidden;
 }
+/*
 .photo-frame::before {
-  content: "Kép helye";
+  content: "";
   position: absolute; inset: auto 0 0 0;
   text-align: center; font-size: 0.7rem;
   padding: 0.3rem 0.5rem 0.45rem;
   color: rgba(244,223,166,0.92);
   background: linear-gradient(180deg, transparent, rgba(10,10,10,0.92));
 }
+  */
 .photo-frame-inner { width: 100%; height: 100%; border-radius: inherit; border: 1px dashed rgba(244,223,166,0.22); }
 .photo-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .link{
