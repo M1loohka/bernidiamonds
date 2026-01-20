@@ -185,7 +185,7 @@ body {
 .hero-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.7rem; }
 
 .photo-frame {
-  aspect-ratio: 4 / 3;
+  
   border-radius: 1.1rem;
   border: 1px solid rgba(244,223,166,0.18);
   background:
@@ -194,6 +194,7 @@ body {
     #0A0A0A;
   position: relative; overflow: hidden;
 }
+/*
 .photo-frame::before {
   content: "Kép helye";
   position: absolute; inset: auto 0 0 0;
@@ -202,8 +203,9 @@ body {
   color: rgba(244,223,166,0.92);
   background: linear-gradient(180deg, transparent, rgba(10,10,10,0.92));
 }
+*/
 .photo-frame-inner { width: 100%; height: 100%; border-radius: inherit; border: 1px dashed rgba(244,223,166,0.22); }
-.photo-img { width: 100%; height: 90%; object-fit: cover; display: block; }
+.photo-img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
 .hero-stats { margin-top: 0.9rem; display: flex; flex-wrap: wrap; gap: 0.8rem; font-size: 0.8rem; }
 .hero-stat-pill {
